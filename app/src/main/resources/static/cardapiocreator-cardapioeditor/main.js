@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
     inicializarModalSucesso();
 });
 
+
+function getApiBaseUrl() {
+    const hostname = window.location.hostname;
+    
+    if (hostname === "localhost" || hostname === "127.0.0.1") {
+        return "http://localhost:8080"; // ajuste para abrir no desenvolvimento local
+    }
+    
+    return "https://projetointegrado-kper.onrender.com";
+}
+
+const API_BASE_URL = getApiBaseUrl();
+
+
 // ==================== FUNÇÕES DE VALIDAÇÃO DE NOME ====================
 
 // Função para verificar disponibilidade do nome
@@ -31,7 +45,7 @@ async function verificarNomeEstabelecimento(nome) {
         return { disponivel: !estabelecimentoExiste };
     }
     
-    const verificaURL = `https://projetointegrado-kper.onrender.com/cardapio/config/buscar/${encodeURIComponent(nomeFormatado)}`;
+    const verificaURL = `${API_BASE_URL}/cardapio/config/buscar/${encodeURIComponent(nomeFormatado)}`;
     
     try {
         const verificaResponse = await fetch(verificaURL, {
@@ -224,7 +238,7 @@ document.getElementById("inputFinal").addEventListener("submit", async (e) => {
             temaPredefinido: formEstabelecimento.temaPredefinido.value,
         };
         
-        const response = await fetch("https://projetointegrado-kper.onrender.com/creator/gerarCardapio", {
+        const response = await fetch("${API_BASE_URL}/creator/gerarCardapio", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
