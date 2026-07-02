@@ -4,52 +4,60 @@ Sistema web para digitalização de cardápios de restaurantes, desenvolvido com
 
 A proposta é simples: acabar com o cardápio de papel. O estabelecimento cadastra seus produtos na plataforma e recebe um QR Code único. Ao escanear o código, o cliente é levado direto para uma página web com o cardápio completo e atualizado — sem precisar instalar aplicativo nenhum.
 
-🔗 Deploy: Render
+
+🔗 **Deploy:** [Render](https://projetointegrado-kper.onrender.com/)
+
+---
+
+## ✨ Funcionalidades
 
 
-✨ Funcionalidades
-
-  📋 Criação e gerenciamento do cardápio (adicionar, editar e remover itens)
-  📱 Geração automática de QR Code vinculado ao cardápio
-  🌐 Página pública do cardápio, acessível por qualquer pessoa que escanear o QR Code
-  🔄 Atualização em tempo real: qualquer alteração no cardápio reflete instantaneamente na página pública
+- 📋 Criação e gerenciamento do cardápio (adicionar, editar e remover itens)
+- 📱 Geração automática de **QR Code** vinculado ao cardápio
+- 🌐 Página pública do cardápio, acessível por qualquer pessoa que escanear o QR Code
+- 🔄 Atualização em tempo real: qualquer alteração no cardápio reflete instantaneamente na página pública
 
 
-💡 Motivação
 
-Cardápios físicos ficam desatualizados rapidamente, têm custo de impressão e não são práticos de manter — principalmente em estabelecimentos que mudam preços ou itens com frequência. O Meu Cardápio resolve isso oferecendo uma solução digital, prática e de baixo custo para pequenos e médios restaurantes modernizarem o atendimento.
+## 💡 Motivação
+
+Cardápios físicos ficam desatualizados rapidamente, têm custo de impressão e não são práticos de manter — principalmente em estabelecimentos que mudam preços ou itens com frequência. O **Meu Cardápio** resolve isso oferecendo uma solução digital, prática e de baixo custo para pequenos e médios restaurantes modernizarem o atendimento.
 
 
-🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
-  Java com Spring Boot — back-end e regras de negócio
-  Thymeleaf — renderização das páginas server-side
-  HTML, CSS e JavaScript — interface e interatividade
-  Docker — containerização da aplicação
-  Render — hospedagem e deploy
+
+- **Java** com **Spring Boot** — back-end e regras de negócio
+- **Thymeleaf** — renderização das páginas server-side
+- **HTML, CSS e JavaScript** — interface e interatividade
+- **Docker** — containerização da aplicação
+- **Render** — hospedagem e deploy
   
-🚀 Como executar localmente
+## 🚀 Como executar localmente
 
-Pré-requisitos
+### Pré-requisitos
 
-
-  Java 17+ (ou a versão configurada no projeto)
-  Maven
-
-Passo a passo
+- Java 17+ (ou a versão configurada no projeto)
+- Maven
+### Passo a passo
 
 Clone o repositório:
 
+```bash
 git clone https://github.com/arthurcunha-software/MeuCardapio.git
+```
 
 Entre na pasta do projeto:
 
+```bash
 cd MeuCardapio
+```
 
 Rode com Maven:
 
+```bash
 ./mvnw spring-boot:run
-
+```
 
 # Rode com Maven
 ./mvnw spring-boot:run
