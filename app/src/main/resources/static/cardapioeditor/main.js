@@ -12,7 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
     let cardapioCompleto = {};
     let nomeEstabelecimentoOriginal = "";
     let temaPredefinidoOriginal = "";
-    
+
+    function getApiBaseUrl() {
+        const hostname = window.location.hostname;
+
+        if (hostname === "localhost" || hostname === "127.0.0.1") {
+            return "http://localhost:8080"; // ajuste para abrir no desenvolvimento local
+        }
+
+        return "https://projetointegrado-kper.onrender.com";
+    }
+
+    const API_BASE_URL = getApiBaseUrl();
+
+
+
     carregarListaCardapios();
     
     const valorInput = document.getElementById("valor");
@@ -25,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-    
+
+
     // Função para carregar lista de cardápios
     async function carregarListaCardapios() {
         try {
@@ -38,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
             
-            const response = await fetch("https://projetointegrado-kper.onrender.com/cardapio/config/retornar");
+            const response = await fetch(`${API_BASE_URL}/cardapio/config/retornar`);
             
             if (response.ok) {
                 const cardapios = await response.json();
@@ -217,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             // NOVO ENDPOINT: usa nomeAntigo como path variable
             // Exemplo: PUT /creator/atualizarCardapio/Restaurante%20Teste
-            const response = await fetch(`https://projetointegrado-kper.onrender.com/creator/atualizarCardapio/${encodeURIComponent(nomeEstabelecimentoOriginal)}`, {
+            const response = await fetch(`${API_BASE_URL}/creator/atualizarCardapio/${encodeURIComponent(nomeEstabelecimentoOriginal)}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -266,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         
         try {
-            const response = await fetch("https://projetointegrado-kper.onrender.com/cardapio/config/criar", {
+            const response = await fetch(`${API_BASE_URL}/cardapio/config/criar`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -374,7 +389,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         try {
-            const response = await fetch(`https://projetointegrado-kper.onrender.com/cardapio/config/excluir?nome=${encodeURIComponent(nomeEstabelecimento)}`, {
+            const response = await fetch(`${API_BASE_URL}/cardapio/config/excluir?nome=${encodeURIComponent(nomeEstabelecimento)}`, {
                 method: 'DELETE'
             });
             

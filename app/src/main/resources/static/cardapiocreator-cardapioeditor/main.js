@@ -238,7 +238,7 @@ document.getElementById("inputFinal").addEventListener("submit", async (e) => {
             temaPredefinido: formEstabelecimento.temaPredefinido.value,
         };
         
-        const response = await fetch("${API_BASE_URL}/creator/gerarCardapio", {
+        const response = await fetch(`${API_BASE_URL}/creator/gerarCardapio`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
