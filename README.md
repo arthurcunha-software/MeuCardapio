@@ -38,9 +38,18 @@ Pré-requisitos
 
 Passo a passo
 
-# Clone o repositório
+Clone o repositório:
+
 git clone https://github.com/arthurcunha-software/MeuCardapio.git
+
+Entre na pasta do projeto:
+
 cd MeuCardapio
+
+Rode com Maven:
+
+./mvnw spring-boot:run
+
 
 # Rode com Maven
 ./mvnw spring-boot:run
