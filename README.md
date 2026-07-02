@@ -1,4 +1,4 @@
-🍽️ Meu Cardápio
+## 🍽️ Meu Cardápio
 
 Sistema web para digitalização de cardápios de restaurantes, desenvolvido como Projeto Integrado do curso de Análise e Desenvolvimento de Sistemas.
 
