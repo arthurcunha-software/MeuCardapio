@@ -64,4 +64,16 @@ Rode com Maven:
 
 A aplicação estará disponível em http://localhost:8080.
 
+## 🎓 Sobre o projeto
+
+Este projeto foi desenvolvido por **Arthur Cunha** como Trabalho de Conclusão de Curso (Projeto Integrado) do curso de **Análise e Desenvolvimento de Sistemas**, com foco em aplicar na prática os conhecimentos de desenvolvimento back-end com Spring Boot, templates server-side com Thymeleaf, e deploy de aplicações em produção.
+
+## 📄 Licença
+
+Feito para fins acadêmicos. Sinta-se à vontade para explorar o código e utilizá-lo como referência de estudo.
+
+🙏 Agradecimentos
+
+O desenvolvimento foi individual, mas registro aqui meu agradecimento a [Henrique Carvalho](https://github.com/HenriqueCarvalhoFernandes) pela contribuição pontual na implementação do sistema de geração de QR Code, que me ajudou a concluir dentro do prazo de entrega.
+
 
