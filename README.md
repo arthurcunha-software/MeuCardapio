@@ -5,7 +5,7 @@ Sistema web para digitalização de cardápios de restaurantes, desenvolvido com
 A proposta é simples: acabar com o cardápio de papel. O estabelecimento cadastra seus produtos na plataforma e recebe um QR Code único. Ao escanear o código, o cliente é levado direto para uma página web com o cardápio completo e atualizado — sem precisar instalar aplicativo nenhum.
 
 
-🔗 **Deploy:** [Render](https://projetointegrado-kper.onrender.com/)
+## 🔗 **Deploy:** [Acessar](https://projetointegrado-kper.onrender.com/)
 
 ---
 
