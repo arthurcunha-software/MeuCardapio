@@ -32,6 +32,20 @@ Cardápios físicos ficam desatualizados rapidamente, têm custo de impressão e
 - **HTML, CSS e JavaScript** — interface e interatividade
 - **Docker** — containerização da aplicação
 - **Render** — hospedagem e deploy
+
+## 🤖 Processo de desenvolvimento com IA
+
+Utilizei ferramentas de IA generativa (Gemini) para acelerar etapas repetitivas do desenvolvimento, mantendo total controle sobre arquitetura, regras de negócio e decisões de produto:
+
+- **Back-end, lógica de negócio e arquitetura**: definidos e implementados por mim
+- **Front-end (HTML/CSS/JS)**: gerado com apoio de IA a partir de prompts específicos, 
+  detalhando o que criar e onde alterar — depois padronizado manualmente para 
+  garantir consistência visual entre as páginas
+- **Documentação**: estruturada com apoio de IA (Claude), a partir do conteúdo e 
+  decisões que eu já tinha definido
+
+Esse fluxo de trabalho com IA foi determinante para viabilizar a entrega individual 
+de um projeto que a faculdade recomendava ser feito em equipes de até 3 pessoas.
   
 ## 🚀 Como executar localmente
 
