@@ -30,6 +30,7 @@ Cardápios físicos ficam desatualizados rapidamente, têm custo de impressão e
 - **Java** com **Spring Boot** — back-end e regras de negócio
 - **Thymeleaf** — renderização das páginas server-side
 - **HTML, CSS e JavaScript** — interface e interatividade
+- **Bootstrap** — estilização e componentes responsivos
 - **Docker** — containerização da aplicação
 - **Render** — hospedagem e deploy
 
